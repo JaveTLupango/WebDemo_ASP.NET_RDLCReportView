@@ -1,0 +1,10 @@
+﻿@using ReportViewerForMvc
+
+@if(ViewBag.ReportViewer != null)
+{
+    @Html.ReportViewer(ViewBag.ReportViewer as Microsoft.Reporting.WebForms.ReportViewer, new { @Width = 1000, @Height = 700 });
+}
+else
+{
+    <center><h1>Error in Error</h1></center>
+}
